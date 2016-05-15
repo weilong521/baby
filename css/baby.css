@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#main {
+    position: absolute;
+    width: 640px;
+    height: 960px;
+    top: 0;
+    left: 50%;
+    margin-left: -320px;
+    -webkit-transform-origin: top;
+}
+
+.zIndex {
+    z-index: 111;
+}
+
+.slide li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.slide li:nth-child(1) {
+    background: #ec87c1;
+}
+
+.a1 .b1 {
+    position: absolute;
+    width: 335px;
+    height: 110px;
+    text-align: center;
+    line-height: 110px;
+    color: #0044DD;
+    font-size: 50px;
+    top: 70px;
+    left: 160px;
+    background: #f1f236;
+    border-radius: 50px;
+}
+
+.a1 .b2 img {
+    position: absolute;
+    top: 26%;
+    left: 28%;
+    width: 290px;
+    height: 330px;
+    border-radius: 30px;
+}
+
+.a1 div {
+    position: absolute;
+    text-align: center;
+    line-height: 90px;
+    width: 400px;
+    height: 300px;
+    top: 64%;
+    left: 19%;
+
+}
+
+#a1 div{
+    -webkit-transform: rotateY(720deg);
+    -webkit-transition:1s;
+}
+
+.a2 img{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 23%;
+    left: 15%;
+}
+/*Ðý×ª*/
+#a2 img{
+    -webkit-transform: rotate(0deg);
+    -webkit-animation: rotateA 2s linear infinite both;
+    animation: rotateA 2s infinite linear both;
+}
+
+@-webkit-keyframes rotateA {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateA {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.a1 a {
+    font-size: 42px;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    background: #63f5de;
+    color: #e962ff;
+}
+
+.slide li:nth-child(2) {
+    background: #f2bf34;
+}
+
+.a2 h1{
+    position: absolute;
+    width: 370px;
+    height: 80px;
+    line-height: 80px;
+    top: 11%;
+    left: -100%;
+    font-size: 59px;
+    color: #aa1fd5;
+}
+.a2 div{
+    position: absolute;
+    width: 400px;
+    height: 10px;
+    background: #f24a94;
+    top: 20%;
+    left: -100%;
+    border-radius: 5px;
+}
+#a2 div,#a2 h1{
+    -webkit-animation: p1-left 1s linear;
+    animation: p1-left 1s linear;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+#a2 div{
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+@-webkit-keyframes p1-left {
+    0% {
+        left: 200%;
+    }
+    100% {
+        left: 21%;
+    }
+}
+
+@keyframes p1-left {
+    0% {
+        left: 200%;
+    }
+    100% {
+        left: 21%
+    }
+}
+.a2 p{
+    position: absolute;
+    width: 160px;
+    height: 170px;
+    left: 46%;
+    top: 50%;
+    margin-top: -45px;
+    margin-left: -45px;
+    -webkit-transform: rotate(0deg);
+    border-radius: 40px;
+}
+.a2 p:nth-child(1){
+    position: absolute;
+    top: 820px;
+    left: 456px;
+    background-image: url("../img/1.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.a2 p:nth-child(2){
+    position: absolute;
+    top: 286px;
+    left: 420px;
+    background-image: url("../img/2.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.a2 p:nth-child(3){
+    position: absolute;
+    top: 566px;
+    left: 112px;
+    background-image: url("../img/3.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.a2 p:nth-child(4){
+    position: absolute;
+    top: 730px;
+    left: 280px;
+    background-image: url("../img/4.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.a2 p:nth-child(5){
+    position: absolute;
+    top: 590px;
+    left: 460px;
+    background-image: url("../img/6.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.a2 p:nth-child(6){
+    position: absolute;
+    background-image: url("../img/5.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.slide li:nth-child(3) {
+    background: url("../img/777.jpg");
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.off {
+    background-image: url("../img/normalmusic.png");
+    background-size: contain;
+}
+
+.rotate {
+    animation: rotating 1.2s linear infinite;
+}
+
+#sound {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 200;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+}
